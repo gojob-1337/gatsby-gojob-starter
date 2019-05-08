@@ -1,0 +1,27 @@
+cache:
+  paths:
+    - node_modules
+
+stages:
+  - build-and-test
+
+build:
+  image: node:10.15.3
+  stage: build-and-test
+  script:
+    - node --version
+    - yarn install --frozen-lockfile --ignore-optional
+    - yarn lint
+    - yarn tsc:all
+    - yarn test
+    - yarn build
+
+e2e:
+  image: cypress/base:10
+  stage: build-and-test
+  script:
+    - node --version
+    # supposed to used cached ".yarn-cache" from previous step: no re-fetch
+    - yarn install --frozen-lockfile --ignore-optional
+    - yarn cypress install
+    - yarn e2e:ci
