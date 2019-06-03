@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "include": [
     "../node_modules/cypress",
-    "../node_modules/cypress-testing-library",
+    "../node_modules/@testing-library/cypress",
     "**/*.ts",
     "**/*.tsx"
   ],

@@ -31,6 +31,7 @@ module.exports = {
       options: {
         analyzerPort: 4000,
         production: true,
+        openAnalyzer: false,
       },
     },
     'gatsby-plugin-material-ui',
