@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/gojob-1337/gatsby-gojob-starter.svg?style=svg)](https://circleci.com/gh/gojob-1337/gatsby-gojob-starter)
+
 # Gojob's Gatsby Starter
 
 Yet another starter for [Gatsby](https://www.gatsbyjs.org) v2.

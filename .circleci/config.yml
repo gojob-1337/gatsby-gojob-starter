@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn lint
-      - run: yarn tsc
+      - run: yarn tsc:all
       - run: yarn test
       - run: yarn build
 workflows:
