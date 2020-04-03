@@ -1,6 +1,6 @@
 module.exports = {
   testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec).ts?(x)'],
-  testPathIgnorePatterns: ['node_modules', 'cypress'],
+  testPathIgnorePatterns: ['node_modules', 'cypress', '.cache'],
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': 'identity-obj-proxy',
   },
