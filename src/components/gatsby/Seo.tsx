@@ -6,8 +6,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 type SeoProps = {
   description?: string;
   lang?: string;
-  meta?: ({ name?: string; content?: string; property?: string })[];
-  keywords?: (string | null)[];
+  meta?: { name?: string; content?: string; property?: string }[];
+  keywords?: string[];
   title?: string;
 };
 
@@ -96,7 +96,7 @@ Seo.propTypes = {
       property: PropTypes.string,
     }).isRequired,
   ),
-  keywords: PropTypes.arrayOf(PropTypes.string),
+  keywords: PropTypes.arrayOf(PropTypes.string.isRequired),
   title: PropTypes.string.isRequired,
 };
 

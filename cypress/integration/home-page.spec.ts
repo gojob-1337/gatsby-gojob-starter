@@ -8,7 +8,7 @@ describe('Home page', () => {
       cy.get('[data-cy="main-page-exit-button"]').click();
 
       cy.url().should('have.string', 'details');
-      cy.queryByText('Welcome to page 2').should('exist');
+      cy.findByText('Welcome to page 2').should('exist');
     });
   });
 });

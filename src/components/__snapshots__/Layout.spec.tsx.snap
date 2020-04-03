@@ -31,7 +31,7 @@ exports[`<Layout /> matches snapshot 1`] = `
       </div>
     </main>
     <footer>
-      © 2019, Built with 
+      © 2020, Built with 
       <a
         href="https://www.gatsbyjs.org"
       >
